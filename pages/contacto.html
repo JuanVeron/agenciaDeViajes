@@ -61,59 +61,81 @@
                 <h1 class="mensaje_comunicate__texto">Comunicate con nosotros</h1>
                 <h2 class="mensaje_comunicate__texto">Dejanos tu consulta y un asesor te contactará</h2>
             </div>
+           
             <div class="formulario">
-                <form class="formulario_de_contacto grid_element--formulario">
-                    <div class="formulario_de_contacto__item formulario_de_contacto__nombre">
-                        <label class="formulario_de_contacto__texto" for="nombre" class="formulario_de_contacto__texto">Nombre: </label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre y apellido" required>
-                    </div>
-                    <div class="formulario_de_contacto__item formulario_de_contacto__email">
-                        <label class="formulario_de_contacto__texto" for="email">Correo electrónico: </label>
-                        <input type="email" id="email" name="email" placeholder="Ingresá un email válido" required>
-                    </div>
-                    <div class="formulario_de_contacto__item formulario_de_contacto__telefono">
-                        <label class="formulario_de_contacto__texto" for="telefono">Teléfono: </label>
-                        <input type="text" id="telefono" placeholder="Ingresá un número de telefono" required>
-                    </div>
-                    <div class="formulario_de_contacto__item formulario_de_contacto__es_cliente">
-                        <h3 class="formulario_de_contacto__pregunta">¿Ya has contratado nuestros servicios?</h3>
-                        <div class="radioptions">
-                            <label class="formulario_de_contacto__texto" for="es_cliente">Sí, soy cliente</label>
-                            <input class="radioselector" type="radio" id="es_cliente" name="es_cliente" value="client_true" required>
-                            <label class="formulario_de_contacto__texto" for="no_es_cliente">Todavía no</label>
-                            <input class="radioselector" type="radio" id="no_es_cliente" name="es_cliente" value="client_false" required>
+
+                <form>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="nombre" class="form-control" />
+                          <label class="form-label" for="nombre">Nombre</label>
                         </div>
-                    </div>
-                    <div class="formulario_de_contacto__item formulario_de_contacto__contacto">
-                        <h3 class="formulario_de_contacto__pregunta">Elegí el método de contacto que preferís</h3>
-                        <div class="radioptions">
-                            <label class="formulario_de_contacto__texto" for="metodo_contacto_whatsapp">WhatsApp</label>
-                            <input class="radioselector" type="radio" id="metodo_contacto_whatsapp" name="metodo_contacto" value="whatsapp" required>
-                            <label class="formulario_de_contacto__texto" for="metodo_contacto_email">Correo electrónico</label>
-                            <input class="radioselector" type="radio" id="metodo_contacto_email" name="metodo_contacto" value="email" required>
-                            <label class="formulario_de_contacto__texto" for="metodo_contacto_phonecall">Llamada telefónica</label>
-                            <input class="radioselector" type="radio" id="metodo_contacto_phonecall" name="metodo_contacto" value="phonecall" required>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="apellido" class="form-control" />
+                          <label class="form-label" for="apellido">Apellido</label>
                         </div>
+                      </div>
                     </div>
-                    <div class="formulario_de_contacto__item formulario_de_contacto__motivo_consulta">
-                        <h3>Seleccioná el motivo de tu consulta</h3>
-                        <label class="formulario_de_contacto__texto" for="motivo_consulta"></label>
-                        <select id="motivo_consulta" name="motivo_consulta">
-                            <option value="">Seleccione un motivo</option>
-                            <option value="more_info">Quiero saber más sobre un paquete turístico</option>
-                            <option value="reservation_q">Quiero hacer una consulta sobre una reserva</option>
-                            <option value="reservation_cancel">Quiero cancelar una reserva</option>
-                            <option value="trobule_in_paradise">Estoy de viaje y tengo un problema</option>
-                            <option value="generic_q">Otro tipo de consulta</option>
-                        </select>
+                    
+                    <!-- Text input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="email" class="form-control" />
+                        <label class="form-label" for="email">Correo electrónico</label>
+                        </div>
+                    
+                    
+                    <h3 class="formulario_de_contacto__pregunta">¿Ya has contratado nuestros servicios?</h3>
+
+
+                    <div class="btn-group">
+                        <input type="radio" class="btn-check" name="cliente" id="option1" autocomplete="off" checked />
+                        <label class="btn btn-secondary" for="option1">Sí, soy cliente</label>
+                      
+                        <input type="radio" class="btn-check" name="cliente" id="option2" autocomplete="off" />
+                        <label class="btn btn-secondary" for="option2">Todavía no soy cliente</label>
                     </div>
-                    <div class="formulario_de_contacto__item formulario_de_contacto__consulta">
-                        <label class="formulario_de_contacto__texto" for="consulta">Dejanos tu consulta: </label>
-                        <textarea name="consulta" id="consulta" cols="40" rows="20"></textarea>
-                        <button>Enviar consulta</button>
+                    <br><br><br>
+
+                    <h3 class="formulario_de_contacto__pregunta">Elegí el método de contacto que preferís</h3>
+
+                    <div class="btn-group">
+                        <input type="radio" class="btn-check" name="contacto" id="WhatsApp" autocomplete="off" checked />
+                        <label class="btn btn-secondary" for="WhatsApp">WhatsApp</label>
+                      
+                        <input type="radio" class="btn-check" name="contacto" id="email_contacto" autocomplete="off"/>
+                        <label class="btn btn-secondary" for="email_contacto">Correo electrónico	</label>
+
+                        <input type="radio" class="btn-check" name="contacto" id="phonecall" autocomplete="off"/>
+                        <label class="btn btn-secondary" for="phonecall">Llamada telefónica</label>
                     </div>
-                </form>
-            </div>
+                    <br><br><br>
+                    
+                    <h3 class="formulario_de_contacto__pregunta">Seleccioná el motivo de tu consulta</h3>
+
+                    <select class = "form-select" id="motivo_consulta" name="motivo_consulta">
+                        <option selected>Seleccione un motivo</option>
+                        <option value="more_info">Quiero saber más sobre un paquete turístico</option>
+                        <option value="reservation_q">Quiero hacer una consulta sobre una reserva</option>
+                        <option value="reservation_cancel">Quiero cancelar una reserva</option>
+                        <option value="trobule_in_paradise">Estoy de viaje y tengo un problema</option>
+                        <option value="generic_q">Otro tipo de consulta</option>
+                    </select>
+                    
+                    <br><br>
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                      <textarea class="form-control" id="consulta_texto" rows="10"></textarea>
+                      <label class="form-label" for="consulta_texto">Dejanos tu consulta</label>
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Enviar consulta</button>
+                  </form>
+            </div> 
         </main>
         <footer class="footer">
             <nav class="nav_footer">
