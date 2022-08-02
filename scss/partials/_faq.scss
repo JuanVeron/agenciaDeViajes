@@ -1,0 +1,37 @@
+/* faq */
+
+.faqmain{
+    padding: 30px 20px 30px 20px;
+}
+
+.faqmain__titulo{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+
+.faqmain__pregunta{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.faqmain__respuesta{
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.terminosmain{
+    padding: 30px 60px 60px 60px;
+}
+
+.terminosmain__texto{
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.terminosmain__subtitulo{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,105 @@
+/* seccion del main */
+
+.main {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.bienvenida{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-content: center; /* porque no me centra el div? */
+}
+
+.bienvenida__banner{
+    width: 100%;
+    height: 500px;
+}
+
+.bienvenida__texto{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bienvenida__slogan{
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.bienvenida__mensaje{
+    font-style: italic;
+}
+
+.imagenes_cuadradas_destinos_locales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.imagenes_cuadradas_destinos_locales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 20px;   
+ }
+
+ .imagenes_cuadradas_destinos_locales__imagen{
+    border-radius: 5%;
+ }
+
+ .imagenes_cuadradas_destinos_locales__imagen{
+    border-radius: 5%;
+ }
+
+ .travel_planners{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgba(0, 236, 185, 0.164)
+ }
+
+.travel_planners{
+    margin: 0px 10px 20px 10px;
+    border-radius: 5px;
+    border-color: black;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.travel_planners_texto__titulo{
+    text-align: justify;
+    margin-bottom: 7px;
+}
+
+.travel_planners_texto__contenido{
+    text-align: justify;
+    font-size: large;
+
+}
+
+.destinos_premium{
+    margin-top: 40px;
+
+}
+
+.destinos_premium_titulo{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size:35px;
+}
+
+.destinos_premium_videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

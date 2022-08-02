@@ -1,0 +1,52 @@
+
+/* viajes */
+
+.titulo_viajes{
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    margin-bottom: 40px;
+    font-size: 30px
+}
+
+.destinos_nacionales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tarjeta_destino{
+    display: flex;
+    margin: 0px 10px 20px 10px;
+    border-radius: 10px;
+    border-color: black;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-content: center;
+    height: 700px;
+    width: 350px;
+}
+
+.tarjeta_destino__nombredestino{
+    text-align: center;
+    margin: 5px 10px 5px; 
+}
+
+.tarjeta_destino__imagen{
+    height: 350px;
+    width: 100%;
+}
+
+.tarjeta_destino__descripcion{
+    text-align: justify;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.destinos_internacionales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
