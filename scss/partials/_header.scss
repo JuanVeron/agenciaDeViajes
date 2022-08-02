@@ -1,13 +1,15 @@
 /* seccion del header */
 
 .header  {
-    position:fixed;
-    background-color: $colorPrincipal;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    
+    & .navbar{
+        width: 100%;
+    }
+    .nav-item{
+        margin:15px;
+        .text-dark{
+            color:black;
+        }
+    }
 }
 
 .logo{
@@ -39,7 +41,7 @@
 
 .botonera{
     display: flex;
-    margin-right:20px
+    margin-right:20px;
 }
 
 .botonera__boton{

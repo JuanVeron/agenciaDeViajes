@@ -1,7 +1,7 @@
 /* seccion del main */
 
 .main {
-    padding-top: 100px;
+    padding-top: $paddingDelMain;
     min-height: 100vh;
 }
 
@@ -103,3 +103,13 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+.bienvenida__jumbotron{
+    width: 100%;
+    height: 400px;
+    .mask{
+        width: 100%;
+        height: 300px;
+    }
+}
+

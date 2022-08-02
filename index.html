@@ -20,7 +20,44 @@
 </head>
 <body class="body">
     <!-- header, main, footer, nav, section -->
-    <header class="header">
+    <header class = "header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-info fixed-top" style="background-color: $colorPrincipal; opacity:90%">
+            <div class="container-fluid">
+                <div class ="logo">
+                    <a href="./index.html">
+                        <img class="logo__imagen" src="./img/logo-color.png" alt="Logo de Turismo Uritorco">
+                    </a>
+                    <div class="logo__texto">
+                        <a href="./index.html"><span class="logo__nombre">TURISMO URITORCO</span></a>
+                        <span class="logo__slogan">Vacaciones de otro planeta</span>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav nav text-dark ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html" aria-current="page" data-bs-toggle="tab"> <a href="./index.html">Inicio</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/viajes.html" data-bs-toggle="tab"><a href="./pages/viajes.html">Viajes</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/empresa.html" data-bs-toggle="tab"><a href="./pages/empresa.html">Empresa</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html" data-bs-toggle="tab"><a href="./pages/contacto.html">Contacto</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html" data-bs-toggle="tab"><a href="./pages/faq.html">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <header class="header">
         <div class ="logo">
             <a href="./index.html">
                 <img class="logo__imagen" src="./img/logo-color.png" alt="Logo de Turismo Uritorco">
@@ -40,17 +77,19 @@
                 <button type="button" class="btn btn-primary botonera__boton"> <a href="./pages/faq.html">Preguntas Frecuentes</a></button>
             </ul>
         </nav>
-        
+         -->
     </header>
     <main class="main grid_wrapper">
         <section> <!--banner paradisíaco y bienvenida al usuario-->
             <div class="bienvenida">
                 <img class="bienvenida__banner grid_element grid_element--banner" src="./img/banner-beach_large.png" alt="Playa paradisíaca"> <!--La idea es hacer este banner de punta a punta-->
+                
                 <div class="bienvenida__texto grid_element grid_element--text1">
                     <h1 class="bienvenida__slogan">Unas vacaciones de otro planeta</h1>
                     <h2 class="bienvenida__mensaje">Tenemos las mejores opciones para tu próximo destino</h2>
                 </div>
             </div>
+
         </section>
         <section> <!--Imágenes de destinos que eventualmente tendrán texto encima-->
             <div class="imagenes_cuadradas_destinos_locales grid_element grid_element--imagenes_cuadradas">
