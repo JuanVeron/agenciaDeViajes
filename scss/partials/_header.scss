@@ -9,11 +9,12 @@
         .text-dark{
             color:black;
         }
+        text-decoration: none;
     }
 }
 
 .nav-color{
-    background-color: $colorPrincipal; opacity: 90%
+    background-color: map-get($misEstilos,colorPrincipal); opacity: 90%
 }
 
 .logo{
