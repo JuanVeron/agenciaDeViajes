@@ -50,6 +50,11 @@ a:visited {
   color: black;
 }
 
+.nav-color {
+  background-color: rgba(4, 255, 255, 0.9);
+  opacity: 90%;
+}
+
 .logo {
   display: flex;
 }
