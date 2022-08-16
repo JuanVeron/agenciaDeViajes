@@ -1,5 +1,7 @@
 @media screen and (max-width:1024px) {
-    
+    .footer{
+        width: 1024px;
+    }
     .logo__slogan{
         display:none
     }
@@ -131,9 +133,30 @@
         grid-area: contacto_formulario;
     }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .travel_planners_texto__contenido{
         display: none;
     }
+    .footer{
+        width: 1024px;
+    }
     }    
 }
+
+@media screen and (max-width:425px) {
+    .travel_planners_texto__contenido{
+        display: none;
+    }
+    .footer{
+        width: 1024px;
+    }
+    }    
+
+@media screen and (max-width:320px){
+    .travel_planners_texto__contenido{
+        display: none;
+    }
+    .footer{
+        width: 1024px;
+    }   
+}    
