@@ -8,6 +8,29 @@
         align-content: center;
     }
 
+    .titulo_viajes{
+        margin-left: 550px;
+        width: auto;
+    }
+
+    .main .destinos_nacionales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 330px;
+    }
+
+    .main .destinos_internacionales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 330px;
+    }
+
+    .tarjeta_destino{
+        width: 600px;
+    }
+
     .bienvenida__texto{
         margin-left: 90px;
     }
