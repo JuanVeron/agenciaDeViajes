@@ -479,6 +479,15 @@ a:visited {
     justify-content: center;
     margin-left: 330px;
   }
+  .main_empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 300px;
+  }
   .tarjeta_destino {
     width: 600px;
   }
@@ -606,6 +615,9 @@ a:visited {
 @media screen and (max-width: 425px) {
   .travel_planners_texto__contenido {
     display: none;
+  }
+  .main_contacto {
+    margin-left: 350px;
   }
 }
 
