@@ -39,8 +39,9 @@
 
     .tarjeta_destino{
         width: 600px;
+        overflow: auto;        
     }
-
+    
     .bienvenida__texto{
         margin-left: 90px;
     }
@@ -159,10 +160,6 @@
 
     .links_redes_sociales{
         margin-bottom: 30px;
-    }
-
-    .tarjeta_destino{
-        overflow: auto;
     }
 
     .main_contacto{

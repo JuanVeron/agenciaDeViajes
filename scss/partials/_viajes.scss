@@ -9,6 +9,9 @@
     font-size: 30px
 }
 
+.tarjeta_destino__descripcion{
+    overflow: auto;
+}
 .destinos_nacionales{
     display: flex;
     flex-direction: row;

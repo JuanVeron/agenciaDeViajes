@@ -321,6 +321,10 @@ a:visited {
   font-size: 30px;
 }
 
+.tarjeta_destino__descripcion {
+  overflow: auto;
+}
+
 .destinos_nacionales {
   display: flex;
   flex-direction: row;
@@ -490,6 +494,7 @@ a:visited {
   }
   .tarjeta_destino {
     width: 600px;
+    overflow: auto;
   }
   .bienvenida__texto {
     margin-left: 90px;
@@ -583,9 +588,6 @@ a:visited {
   }
   .links_redes_sociales {
     margin-bottom: 30px;
-  }
-  .tarjeta_destino {
-    overflow: auto;
   }
   .main_contacto {
     display: grid;
